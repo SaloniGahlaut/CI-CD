@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Safari.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">basic-selenium-java</a> &gt; <a href="index.source.html" class="el_package">localbrowsers</a> &gt; <span class="el_source">Safari.java</span></div><h1>Safari.java</h1><pre class="source lang-java linenums">package localbrowsers;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+/**
+ * Created by andrew on 12/3/16.
+ */
+@Test//(groups = {&quot;mac&quot;})
+<span class="fc" id="L16">public class Safari {</span>
+    private WebDriver driver;
+
+    @BeforeTest
+    public void safariSetup(){
+<span class="nc" id="L21">        DesiredCapabilities capabilities = DesiredCapabilities.safari();</span>
+<span class="nc" id="L22">        SafariOptions options = new SafariOptions();</span>
+<span class="nc" id="L23">        capabilities.setCapability(SafariOptions.CAPABILITY, options);</span>
+<span class="nc" id="L24">        driver = new SafariDriver(capabilities);</span>
+<span class="nc" id="L25">    }</span>
+    @Test
+    public void test(){
+<span class="nc" id="L28">        driver.get(&quot;http://lazycoder.io/about.html&quot;);</span>
+<span class="nc" id="L29">        Assert.assertEquals(driver.getTitle(), &quot;Lazy Coder Origins&quot;);</span>
+<span class="nc" id="L30">    }</span>
+
+    @AfterTest
+    public void testTeardown(){
+<span class="nc" id="L34">        driver.quit();</span>
+<span class="nc" id="L35">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

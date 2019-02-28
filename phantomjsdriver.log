@@ -1,0 +1,15 @@
+[INFO  - 2019-02-27T15:42:33.825Z] GhostDriver - Main - running on port 30155
+[INFO  - 2019-02-27T15:42:34.671Z] Session [4d41c990-3aa6-11e9-a8a5-0d4e712df79f] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-02-27T15:42:34.671Z] Session [4d41c990-3aa6-11e9-a8a5-0d4e712df79f] - page.customHeaders:  - {}
+[INFO  - 2019-02-27T15:42:34.672Z] Session [4d41c990-3aa6-11e9-a8a5-0d4e712df79f] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-02-27T15:42:34.672Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4d41c990-3aa6-11e9-a8a5-0d4e712df79f
+[ERROR - 2019-02-27T15:42:52.763Z] Session [4d41c990-3aa6-11e9-a8a5-0d4e712df79f] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'n.responseText.startsWith("{")')
+[ERROR - 2019-02-27T15:42:52.768Z] Session [4d41c990-3aa6-11e9-a8a5-0d4e712df79f] - page.onError - stack:
+  onload (https://d3sjgucddk68ji.cloudfront.net/convertfox.min.js:4)
+[ERROR - 2019-02-27T15:42:53.498Z] Session [4d41c990-3aa6-11e9-a8a5-0d4e712df79f] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'Object.assign(e,t)')
+[ERROR - 2019-02-27T15:42:53.498Z] Session [4d41c990-3aa6-11e9-a8a5-0d4e712df79f] - page.onError - stack:
+  (anonymous function) (https://d1v3uce98qr32f.cloudfront.net/chat-widget/dist/v2/cf-assets.min.js:4)
+  forEach (:0)
+  d (https://d1v3uce98qr32f.cloudfront.net/chat-widget/dist/v2/cf-assets.min.js:4)
+  a (https://d1v3uce98qr32f.cloudfront.net/chat-widget/dist/v2/cf-assets.min.js:4)
+[INFO  - 2019-02-27T15:42:58.141Z] ShutdownReqHand - _handle - About to shutdown
